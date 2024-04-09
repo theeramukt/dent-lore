@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1.2rem 3rem;
+    box-shadow: 0 3px 5px #bbb;
+}
+
+.nav ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav a{
+    color: #175393;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
