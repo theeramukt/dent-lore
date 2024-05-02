@@ -43,14 +43,23 @@
     justify-content: center;
     background-color: #378CE7;
     margin-bottom: 20px;
-    padding: 10px 0;
+    padding: 10px 10px;
     border-radius: 0.4rem;
     color: white;
+    text-align: center;
 }
 
 .graph {
     width: 100%;
-    height: 40rem;
+    height: 45rem;
     margin: 25px 25px 0 0;
     box-shadow: 0 5px 10px#aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphPic {
+    /* margin-left: 40px; */
+    /* margin-top: 5px; */
 }

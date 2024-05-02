@@ -1,0 +1,16 @@
+.rdfContainer {
+    width: 100%;
+    height: 30%;
+    /* height: 45rem; */
+    margin: 25px 25px 0 0;
+    box-shadow: 0 5px 10px#aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rdf {
+    margin: 20px;
+    height: 50rem;
+    overflow: scroll;
+}

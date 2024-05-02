@@ -23,9 +23,9 @@ const VisComponent = (props) => {
             // },
             scaling: {
                 min: 1,
-                max: 150,
+                max: 7,
                 customScalingFunction: function (min, max, total, value) {
-                  return value / total;
+                  return value;
                 },
               },
             size: 30,
@@ -40,6 +40,8 @@ const VisComponent = (props) => {
           },
           edges: {
             width: 2,
+            font: { align: "middle" } ,
+            length: 400,
             // color: '#333',
             // arrows: 'to',
           },
