@@ -23,7 +23,7 @@ const VisComponent = (props) => {
             // },
             scaling: {
                 min: 1,
-                max: 7,
+                max: 5,
                 customScalingFunction: function (min, max, total, value) {
                   return value;
                 },
@@ -31,11 +31,11 @@ const VisComponent = (props) => {
             size: 30,
             // font: {
             //   font: 'Arial',
-            //   size: 12,
-            //   bold: {
-            //     // fontWeight: 'bold',
-            //   },
-            // //   color: '#fff',
+            //   size: 30,
+              // bold: {
+              //   fontWeight: 'bold',
+              // },
+            //   color: '#fff',
             // },
           },
           edges: {
@@ -52,7 +52,7 @@ const VisComponent = (props) => {
           interaction: {
             hover: true,
           },
-          height: '700px'
+          height: '550px'
     };
 
     const network = new vis.Network(container, data, options);

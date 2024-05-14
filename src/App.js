@@ -5,6 +5,8 @@ import NavBar from "./components/NavBar/NavBar";
 import { Route, Routes } from "react-router-dom";
 import Result from "./pages/Result/Result";
 import Rdf from "./pages/RDF/Rdf";
+import UploadFile from "./pages/UploadFile/UploadFile";
+import EditData from "./pages/EditData/EditData";
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/result" element={<Result />} />
           <Route path="/rdf" element={<Rdf />} />
+          <Route path="/upload-file" element={<UploadFile />} />
+          <Route path="/edit" element={<EditData />} />
         </Routes>
       </div>
     </div>
