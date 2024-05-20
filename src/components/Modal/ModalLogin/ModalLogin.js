@@ -12,7 +12,7 @@ const ModalLogin = ({ handleClickClose, handleLogin, onChange }) => {
         <div className='loginSubTitle'>
           please enter your password to login
         </div>
-        <div className='passwordInput'><input placeholder='password' onChange={onChange}/></div>
+        <div className='passwordInput'><input placeholder='password' type="password" onChange={onChange}/></div>
         <div className="buttonContainer">
           <button className="loginButton" onClick={handleLogin}>Login</button>
         </div>

@@ -16,16 +16,46 @@ const VisComponent = (props) => {
 
     const options = {
         nodes: {
-            // shape: 'dot',
+            shape: 'dot',
+            // shapeProperties: {
+            //   borderRadius: 50
+            // },
+            labelInside: true,
+            labelGravity: false,
+            scaling: {
+              enabled: true,
+              min: 5,
+              max: 150,
+              // label: {
+              //   min: 8,
+              //   max: 20,
+              // },
+            },
+            color: "#cba7c1",
+            widthConstraint: {
+              maximum: 200
+            }
             // labelPosition: 'top',
           },
         edges: {
           width: 2,
-          font: { align: "middle" } ,
+          // font: { align: "middle" } ,
           arrows: 'to',
+          widthConstraint: {
+            maximum: 200
+          },
+          length: 300,
         },
         interaction: {
           hover: true,
+        },
+        physics: {
+          enabled: true,
+          barnesHut: {
+            gravitationalConstant: -8000,
+            springConstant: 0.05,
+            damping: 0.4,
+          },
         },
         height: '550px',
           

@@ -27,9 +27,7 @@ const UploadFile = () => {
         });
     }
   };
-
-  console.log("file", file);
-  console.log("title", title);
+  
   return (
     <div className="uploadPageContainer">
       <form>

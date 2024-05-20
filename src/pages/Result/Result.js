@@ -11,18 +11,14 @@ const Result = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const searchValue = useSelector((state) => state.search.searchValue);
-  console.log("search", searchValue);
   const [nodes, setNodes] = useState([]);
   const [edges, setEdges] = useState([]);
   const [search, setSearch] = useState("a");
-  console.log("searchInput", search);
   const handleClick = (e) => {
     e.preventDefault();
     dispatch(setSearchValue(search));
   };
   const handleNavigate = () => {
-    console.log("navigate");
-    // navigate("/rdf");
     navigate("/edit");
   };
   useEffect(() => {
@@ -40,7 +36,6 @@ const Result = () => {
         
   }, [searchValue]);
 
-  console.log("nodes", nodes);
   useEffect(() => {
     fetch(`https://backend-dentlore.onrender.com/getedge_search?q=${searchValue}`)
       .then((res) => {

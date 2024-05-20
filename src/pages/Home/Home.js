@@ -11,7 +11,6 @@ const Home = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const searchValue = useSelector((state) => state.search.searchValue);
-  console.log("search", searchValue);
   const [search, setSearch] = useState("")
   const handleClick = (e) => {
     e.preventDefault()

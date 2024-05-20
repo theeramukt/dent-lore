@@ -1,10 +1,57 @@
 .modalEditContainer {
-    width: 500px;
-    border-radius: 12px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 500px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+.header {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 0;
+    padding: 0;
+}
+
+.header p {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
     align-items: center;
-    padding: 25px;
-  }
+    margin-top: 5px;
+
+}
+
+.inputDataContainer {
+    width: 100%;
+}
+
+.inputEditTitle {
+    margin-bottom: 10px;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.submitButton {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  color: white;
+}

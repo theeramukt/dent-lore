@@ -8,76 +8,75 @@
     align-items: center;
     z-index: 1;
   } */
-  .modalBackground {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modalDeleteContainer {
-    width: 500px;
-    height: 400px;
-    border-radius: 12px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px;
-  }
+.modalBackground {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-  .modalContainer{
-    display: inline-block;
-    text-align: center;
-    margin-top: 10px;
-  }
+.modalDeleteContainer {
+  width: 500px;
+  height: 400px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
 
-  .closeButton {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    color: black;
-    font-size: 1.5rem;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    
-  }
+.modalContainer {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
 
-  .crossIcon {
-    display: flex;
-    justify-content: center;
-  }
+.closeButton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  color: black;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
 
-  .buttonContainer {
-    display: flex;
-    /* justify-content: space-between;
+.crossIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonContainer {
+  display: flex;
+  /* justify-content: space-between;
     width: 100%;
     margin-top: 20px; */
-    gap: 20px;
-  }
+  gap: 20px;
+}
 
-  .cancelButton {
-    width: 100px;
-    height: 40px;
-    border: 1px solid;
-    border-radius: 5px;
-    background-color: transparent;
-    cursor: pointer;
-  }
+.cancelButton {
+  width: 100px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
 
-  .deleteButton {
-    width: 100px;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--color-danger);
-    cursor: pointer;
-    color: white;
-  }
+.deleteButton {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-danger);
+  cursor: pointer;
+  color: white;
+}

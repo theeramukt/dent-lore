@@ -2,7 +2,6 @@ import React from "react";
 import "./ModalAddTriple.css";
 
 const ModalAddTriple = ({ handleClickClose, topic, handleHead, handleRelation, handleTail, handleTopic, handleAddTriple }) => {
-  console.log("topic", topic);
   return (
     <div className="modalBackground">
       <div className="modalAddTripleContainer">

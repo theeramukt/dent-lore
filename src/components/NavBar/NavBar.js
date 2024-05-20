@@ -17,9 +17,11 @@ const NavBar = () => {
   const passwordValue = useSelector((state) => state.login.passwordValue);
   const [openLoginModal, setOpenLoginModal] = useState(false)
   const [password, setPassword] = useState("")
-  console.log("pass", passwordValue)
+  const adminPassword = localStorage.getItem("password")
+
+  // localStorage.removeItem('password')
   const handleClick = () => {
-    if (passwordValue == "ajarnart") {
+    if (passwordValue == "ajarnart" || adminPassword == "ajarnart") {
       navigate("/admin")
     } else {
       setOpenLoginModal(true)
@@ -41,6 +43,11 @@ const NavBar = () => {
           alert("No data found");
         });
   }
+
+  const handleLogout = () => {
+    localStorage.clear()
+    navigate('/')
+  }
   return (
     <nav className="nav">
       <ul>
@@ -59,6 +66,7 @@ const NavBar = () => {
         <li>
           <div className='navButton' onClick={handleClick}><MdAdminPanelSettings size={25} color="#925e8f"/>Admin</div>
         </li>
+        {adminPassword && <li><button onClick={handleLogout} className='logout'>Log out</button></li>}
       </ul>
       {openLoginModal && <ModalLogin handleClickClose={() => setOpenLoginModal(false)} onChange={(e) => setPassword(e.target.value)} handleLogin={handleLogin} />}
     </nav>
