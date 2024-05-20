@@ -96,6 +96,7 @@ useEffect(() => {
         </div>
       </div>
       <div className="editsContainer">
+      <div style={{padding: 10, margin: 0, fontSize: 20, fontWeight: 'bold'}}>Edit Triples</div>
         {edges.map((data) => (
           <div className="editContainer">
             <div className="edit">

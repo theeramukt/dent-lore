@@ -15,7 +15,7 @@
 }
 
 .nav a{
-    color: #175393;
+    color: var(--color-primary);
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
@@ -31,5 +31,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--color-primary);
+    font-size: 18px;
+    font-weight: 700;
     gap: 10px;
 }

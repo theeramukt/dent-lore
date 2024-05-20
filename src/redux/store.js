@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import searchReducer from './userSlice';
+import searchReducer from './searchSlice';
+import loginReducer from './userSlice';
 
 export default configureStore({
     reducer: {
-        search: searchReducer
+        search: searchReducer,
+        login: loginReducer
     },
 });

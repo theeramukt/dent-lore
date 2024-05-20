@@ -7,6 +7,7 @@ import Result from "./pages/Result/Result";
 import Rdf from "./pages/RDF/Rdf";
 import UploadFile from "./pages/UploadFile/UploadFile";
 import EditData from "./pages/EditData/EditData";
+import Admin from "./pages/Admin/Admin";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/rdf" element={<Rdf />} />
           <Route path="/upload-file" element={<UploadFile />} />
           <Route path="/edit" element={<EditData />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </div>
     </div>

@@ -12,7 +12,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #E3EFFD;
+    background-color: var(--color-secondary);
     margin: 25px 15px 25px 30px;
 }
 
@@ -20,7 +20,7 @@
     margin-left: 10px;
     width: 3.5rem;
     height: 1.4rem;
-    background-color: #378CE7;
+    background-color: var(--color-primary);
     color: white;
     font-size: 11px;
     font-weight: 600;
@@ -34,14 +34,14 @@
     height: 80vh;
     margin-left: 30px;
     padding: 20px 30px;
-    background-color: #E3EFFD;
+    background-color: var(--color-secondary);
     overflow: auto;
 }
 
 .entity {
     display: flex;
     justify-content: center;
-    background-color: #378CE7;
+    background-color: var(--color-primary);
     margin-bottom: 20px;
     padding: 10px 10px;
     border-radius: 0.4rem;

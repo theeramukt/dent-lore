@@ -16,43 +16,19 @@ const VisComponent = (props) => {
 
     const options = {
         nodes: {
-            shape: 'dot',
-            // color: {
-            //   border: '#ccc',
-            //   background: (node) => (node.id % 2 === 0 ? '#f0f0f0' : '#fff'),
-            // },
-            scaling: {
-                min: 1,
-                max: 5,
-                customScalingFunction: function (min, max, total, value) {
-                  return value;
-                },
-              },
-            size: 30,
-            // font: {
-            //   font: 'Arial',
-            //   size: 30,
-              // bold: {
-              //   fontWeight: 'bold',
-              // },
-            //   color: '#fff',
-            // },
+            // shape: 'dot',
+            // labelPosition: 'top',
           },
-          edges: {
-            width: 2,
-            font: { align: "middle" } ,
-            length: 400,
-            // color: '#333',
-            // arrows: 'to',
-          },
-        //   backgroundColor: '#000000',
-          physics: {
-            enabled: true,
-          },
-          interaction: {
-            hover: true,
-          },
-          height: '550px'
+        edges: {
+          width: 2,
+          font: { align: "middle" } ,
+          arrows: 'to',
+        },
+        interaction: {
+          hover: true,
+        },
+        height: '550px',
+          
     };
 
     const network = new vis.Network(container, data, options);

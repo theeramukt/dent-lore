@@ -4,7 +4,7 @@ import "./Result.css";
 import graph from "../../assets/graph_5.PNG";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setSearchValue } from "../../redux/userSlice";
+import { setSearchValue } from "../../redux/searchSlice";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const Result = () => {
@@ -49,7 +49,7 @@ const Result = () => {
       .then((data) => {
         setEdges(data);
       });
-  }, []);
+  }, [searchValue]);
   return (
     <div className="resultContainer">
       <div className="leftContainer">
@@ -73,9 +73,9 @@ const Result = () => {
           {/* <button className="navigateButton" onClick={() => {handleNavigate()}}>
             RDF
           </button> */}
-          <button className="navigateButton" onClick={() => {handleNavigate()}}>
+          {/* <button className="navigateButton" onClick={() => {handleNavigate()}}>
             Edit
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
