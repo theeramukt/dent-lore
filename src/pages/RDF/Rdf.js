@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Search } from "../../components/Search/Search";
 import "./Rdf.css";
 
 const Rdf = () => {

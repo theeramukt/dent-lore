@@ -26,10 +26,10 @@ const VisComponent = (props) => {
               enabled: true,
               min: 5,
               max: 150,
-              // label: {
-              //   min: 8,
-              //   max: 20,
-              // },
+              label: {
+                min: 8,
+                max: 20,
+              },
             },
             color: "#cba7c1",
             widthConstraint: {

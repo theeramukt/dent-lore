@@ -1,11 +1,10 @@
 import VisComponent from "../../components/Graph/VisComponent";
 import { Search } from "../../components/Search/Search";
 import "./Result.css";
-import graph from "../../assets/graph_5.PNG";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setSearchValue } from "../../redux/searchSlice";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Result = () => {
   const navigate = useNavigate();
@@ -18,9 +17,7 @@ const Result = () => {
     e.preventDefault();
     dispatch(setSearchValue(search));
   };
-  const handleNavigate = () => {
-    navigate("/edit");
-  };
+
   useEffect(() => {
       fetch(`https://backend-dentlore.onrender.com/getnode_search?q=${searchValue}`)
         .then((res) => {
@@ -31,7 +28,8 @@ const Result = () => {
         })
         .catch((error) => {
           console.error("Error:", error);
-          alert("No data found");
+          searchValue === "" ? alert("Please enter data") : alert("No data found");
+          navigate("/")
         });
         
   }, [searchValue]);
@@ -43,6 +41,9 @@ const Result = () => {
       })
       .then((data) => {
         setEdges(data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
       });
   }, [searchValue]);
   return (
@@ -65,12 +66,6 @@ const Result = () => {
           <VisComponent nodes={nodes} edges={edges} />
         </div>
         <div className="navigateButtonContainer">
-          {/* <button className="navigateButton" onClick={() => {handleNavigate()}}>
-            RDF
-          </button> */}
-          {/* <button className="navigateButton" onClick={() => {handleNavigate()}}>
-            Edit
-          </button> */}
         </div>
       </div>
     </div>

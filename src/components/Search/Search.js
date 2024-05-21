@@ -1,13 +1,12 @@
 import "./Search.css"
 import SearchIcon from "../../assets/Search.png"
-import { useNavigate } from "react-router-dom";
 
-export const Search = ({width, handleSearch, value, onChange}) => {
+export const Search = ({width, onChange, placeholder}) => {
 
   return (
     <div className="input-wrapper">
-    <img src={SearchIcon} id="search-icon" />
-      <input placeholder="Type to search..." style={{width: width}} onChange={onChange}/>
+    <img src={SearchIcon} id="search-icon" alt=""/>
+      <input placeholder={placeholder ? placeholder : "Type to search..."} style={{width: width}} onChange={onChange}/>
     </div>
   );
 };
